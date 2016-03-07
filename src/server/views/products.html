@@ -21,9 +21,9 @@
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav">
-        <li class="active"><a href="./">Home <span class="sr-only">(current)</span></a></li>
+        <li><a href="./">Home</a></li>
+        <li class="active"><a href="./products">Products <span class="sr-only">(current)</span></a></li>
         
-        <li><a href="/products">Products</a></li>
         
         <li><a href="./checkout">Checkout</a></li>
       </ul>
@@ -31,29 +31,81 @@
     </div><!-- /.navbar-collapse -->
   </div><!-- /.container-fluid -->
 </nav>
-    
+
+
 <div class="row">
-  <div class="col-md-12">
-    <h1>{{ title }} Index</h1>
+  <div class="container-fluid productBtn">
+    <div class="col-sm-4">
+      <button class="allBtn center-block">All watches</button>
+    </div>
+    <div class="col-sm-4">
+      <button class="digitalBtn center-block">Digital</button>
+    </div>
+    <div class="col-sm-4">
+      <button class="analogBtn center-block">Analog</button>
+    </div>
   </div>
 </div>
 
 <div class="row">
-    <form class="form-horizontal signUp">
-      <div class="container-fluid">
-          <h2 class="text-center">Sign Up Today</h2>
-          <div class="form-group email">
-            <label for="exampleInputEmail1" class="col-sm-2 col-sm-offset-2 control-label">Email address</label>
-            <div class="col-sm-4">
-              <input type="email" class="form-control" id="inputEmail3" placeholder="Subscribe to Our News Letter">
-            </div>
-            <div class="col-sm-2">
-              <button type="submit" id="signUpButton" class="btn btn-default">Sign Up!</button>
-            </div>
-          </div>
-          </div>
-    </form>
+  <div class="container-fluid">
+    <div class="col-sm-12">
+      <h1 class="center">{{ title }}</h1>
+    </div>
+  </div>
 </div>
+
+<div class="row">
+  <div class="container-fluid">
+    <div class="col-sm-3 digital center-block"> 
+     <img src="img/woodDigital21.jpg">
+    </div> 
+    <div class="col-sm-3 analog center-block"> 
+     <img src="img/metalAnalog21.jpg">
+    </div>  
+    <div class="col-sm-3 digital center-block"> 
+     <img src="img/metalDigital21.jpg">
+    </div> 
+    <div class="col-sm-3 analog center-block"> 
+     <img src="img/woodAnalog21.jpg">
+    </div>  
+  </div>
+</div>
+
+<div class="row">
+  <div class="container-fluid">
+    <div class="col-sm-3 digital center-block"> 
+     <img src="img/woodDigital23.jpg">
+    </div> 
+    <div class="col-sm-3 analog center-block"> 
+     <img src="img/metalAnalog23.jpg">
+    </div>  
+    <div class="col-sm-3 digital center-block"> 
+     <img src="img/metalDigital23.jpg">
+    </div> 
+    <div class="col-sm-3 analog center-block"> 
+     <img src="img/woodAnalog25.jpg">
+    </div>  
+  </div>
+</div>
+
+<div class="row">
+  <div class="container-fluid">
+    <div class="col-sm-3 digital center-block"> 
+     <img src="img/woodDigital25.jpg">
+    </div> 
+    <div class="col-sm-3 analog center-block"> 
+     <img src="img/metalAnalog27.jpg">
+    </div>  
+    <div class="col-sm-3 digital center-block"> 
+     <img src="img/metalDigital25.jpg">
+    </div> 
+    <div class="col-sm-3 analog center-block"> 
+     <img src="img/woodAnalog23.jpg">
+    </div>  
+  </div>
+</div>
+
 
 <footer class="row">
   <div class="container-fluid">
@@ -88,6 +140,5 @@
     </div>
   </div>
 </footer>
-
 
 {% endblock %}
