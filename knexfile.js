@@ -2,7 +2,10 @@ module.exports = {
 
   development: {
     client: 'pg',
-    connection: 'postgres://localhost/cwatches'
+    connection: 'postgres://localhost/cwatches',
+    seeds: {
+      directory: './seeds/'
+    }
   },
 
   production: {

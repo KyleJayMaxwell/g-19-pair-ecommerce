@@ -3,8 +3,8 @@ exports.up = function(knex, Promise) {
     table.increments('id');
     table.integer('user_id');
     table.string('address');
-    table.bigInteger('credit_card');
-    table.string('cc_experation');
+    table.bigInteger('creditcard');
+    table.string('ccexperation');
     table.integer('ccv');
     table.foreign('user_id')
     .references('id')

@@ -11,7 +11,7 @@ img{
   margin-right: 5%;
   margin-left: 5%;
   height: 200px;
- 
+
 }
 footer {
     background: #474747;
@@ -37,7 +37,7 @@ footer ul li a:hover {
     text-decoration: none;
 }
 .fa {
-    color: red;
+    color: #FFFFFF;
 }
 .block {
     background: #ffffff;
@@ -137,4 +137,8 @@ img {
 
 .featured{
   max-width: 70%;
+}
+/* new styling for back-end */
+.login {
+    margin-top: 40px;
 }

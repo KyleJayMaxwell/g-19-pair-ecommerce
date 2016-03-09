@@ -6,7 +6,17 @@ var logger = require('morgan');
 var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
 var swig = require('swig');
+var knex = require('../db/knex');
 
+// *** seeds *** //
+// if(NODE_ENV = "development"){
+//   if(TABLES ARE EMPTY){
+//     knex.seed.run()
+//     .then(function(){
+//       console.log('Data Filled');
+//     });
+//   }
+// }
 
 // *** routes *** //
 var routes = require('./routes/index.js');
