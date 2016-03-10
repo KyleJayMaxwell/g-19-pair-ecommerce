@@ -47,6 +47,18 @@ describe('testing API routes', function() {
     });
   });
 
+  it('should get the review page', function(done) {
+    chai.request(server)
+    .get('/review')
+    .end(function(err, res){
+      console.log(res.text);
+      res.should.have.status(200);
+      res.should.be.html;
+      res.text.should.have.string('<title>Review</title>');
+      // res.text.should.contain('')
+      done();
+    });
+  });
 
 });
 
