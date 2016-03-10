@@ -65,55 +65,64 @@
 </div>
 
 <div class="row">
+
   <div class="container-fluid">
-    <div class="col-sm-3 digital center-block"> 
-     <img src="img/woodDigital21.jpg">
-    </div> 
-    <div class="col-sm-3 analog center-block"> 
-     <img src="img/metalAnalog21.jpg">
-    </div>  
-    <div class="col-sm-3 digital center-block"> 
-     <img src="img/metalDigital21.jpg">
-    </div> 
-    <div class="col-sm-3 analog center-block"> 
-     <img src="img/woodAnalog21.jpg">
-    </div>  
+    {% for watch in watches %}
+    <div class="col-md-3">
+      <img src="{{watch.image}}"
+      <h2>{{ watch.name }}</h2>
+      <p> {{ watch.description }}</p>
+    </div>
+
+    {% endfor %}
+    <!--<div class="col-sm-3 digital center-block"> -->
+     <!--<img src="img/woodDigital21.jpg">-->
+    <!--</div> -->
+    <!--<div class="col-sm-3 analog center-block"> -->
+     <!--<img src="img/metalAnalog21.jpg">-->
+    <!--</div>  -->
+    <!--<div class="col-sm-3 digital center-block"> -->
+     <!--<img src="img/metalDigital21.jpg">-->
+    <!--</div> -->
+    <!--<div class="col-sm-3 analog center-block"> -->
+     <!--<img src="img/woodAnalog21.jpg">-->
+    <!--</div>  -->
   </div>
 </div>
 
-<div class="row">
-  <div class="container-fluid">
-    <div class="col-sm-3 digital center-block"> 
-     <img src="img/woodDigital23.jpg">
-    </div> 
-    <div class="col-sm-3 analog center-block"> 
-     <img src="img/metalAnalog23.jpg">
-    </div>  
-    <div class="col-sm-3 digital center-block"> 
-     <img src="img/metalDigital23.jpg">
-    </div> 
-    <div class="col-sm-3 analog center-block"> 
-     <img src="img/woodAnalog25.jpg">
-    </div>  
-  </div>
-</div>
+<!--<div class="row">-->
+  <!--<div class="container-fluid">-->
+    <!--<div class="col-sm-3 digital center-block"> -->
+     <!--<img src="img/woodDigital23.jpg">-->
+    <!--</div> -->
+    <!--<div class="col-sm-3 analog center-block"> -->
+     <!--<img src="img/metalAnalog23.jpg">-->
+    <!--</div>  -->
+    <!--<div class="col-sm-3 digital center-block"> -->
+     <!--<img src="img/metalDigital23.jpg">-->
+    <!--</div> -->
+    <!--<div class="col-sm-3 analog center-block"> -->
+     <!--<img src="img/woodAnalog25.jpg">-->
+    <!--</div>  -->
+  <!--</div>-->
+<!--</div>-->
 
-<div class="row">
-  <div class="container-fluid">
-    <div class="col-sm-3 digital center-block"> 
-     <img src="img/woodDigital25.jpg">
-    </div> 
-    <div class="col-sm-3 analog center-block"> 
-     <img src="img/metalAnalog27.jpg">
-    </div>  
-    <div class="col-sm-3 digital center-block"> 
-     <img src="img/metalDigital25.jpg">
-    </div> 
-    <div class="col-sm-3 analog center-block"> 
-     <img src="img/woodAnalog23.jpg">
-    </div>  
-  </div>
-</div>
+<!--<div class="row">-->
+  <!--<div class="container-fluid">-->
+    <!--<div class="col-sm-3 digital center-block"> -->
+     <!--<img src="img/woodDigital25.jpg">-->
+    <!--</div> -->
+    <!--<div class="col-sm-3 analog center-block"> -->
+     <!--<img src="img/metalAnalog27.jpg">-->
+    <!--</div>  -->
+    <!--<div class="col-sm-3 digital center-block"> -->
+     <!--<img src="img/metalDigital25.jpg">-->
+    <!--</div> -->
+    <!--<div class="col-sm-3 analog center-block"> -->
+     <!--<img src="img/woodAnalog23.jpg">-->
+    <!--</div>  -->
+  <!--</div>-->
+<!--</div>-->
 
 
 <footer class="row">

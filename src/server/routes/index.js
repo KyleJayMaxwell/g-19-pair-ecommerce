@@ -7,7 +7,9 @@ router.get('/', function(req, res, next) {
 });
 
 router.get('/products', function(req, res, next) {
-  res.render('products', { title: 'Products' });
+  knex.select().table('products').then(function(result) {
+    res.render('products', {title: 'Products', watches: result });
+  });
 });
 
 router.get('/checkout', function(req, res, next) {
