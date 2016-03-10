@@ -22,6 +22,28 @@ router.get('/review', function(req, res, next) {
   res.render('review', { title: 'Review' });
 });
 
+router.get('/charge', function(req, res, next) {
+  res.render('charge', { title: 'Charge' });
+});
+
+router.post('/charge', function(req, res,next) {
+    var stripeToken = req.body.stripeToken;
+    var amount =  req.body.stripeAmount;
+
+    stripe.charges.create({
+        card: stripeToken,
+        currency: 'usd',
+        amount: amount
+    },
+    function(err, charge) {
+        if (err) {
+            res.send('error');
+        } else {
+            res.send('success');
+        }
+    });
+});
+
 router.post('/checkout', function(req, res, next) {
   console.log(req.body);
   var street = req.body.address;

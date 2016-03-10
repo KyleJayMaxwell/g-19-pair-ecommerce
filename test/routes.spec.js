@@ -12,7 +12,7 @@ describe('testing API routes', function() {
     chai.request(server)
     .get('/')
     .end(function(err, res){
-      console.log(res.text);
+      // console.log(res.text);
       res.should.have.status(200);
       res.should.be.html;
       res.text.should.have.string('<title>Cwatch</title>');
@@ -25,7 +25,7 @@ describe('testing API routes', function() {
     chai.request(server)
     .get('/products')
     .end(function(err, res){
-      console.log(res.text);
+      // console.log(res.text);
       res.should.have.status(200);
       res.should.be.html;
       res.text.should.have.string('<title>Products</title>');
@@ -38,7 +38,7 @@ describe('testing API routes', function() {
     chai.request(server)
     .get('/checkout')
     .end(function(err, res){
-      console.log(res.text);
+      // console.log(res.text);
       res.should.have.status(200);
       res.should.be.html;
       res.text.should.have.string('<title>Checkout</title>');
@@ -51,7 +51,7 @@ describe('testing API routes', function() {
     chai.request(server)
     .get('/review')
     .end(function(err, res){
-      console.log(res.text);
+      // console.log(res.text);
       res.should.have.status(200);
       res.should.be.html;
       res.text.should.have.string('<title>Review</title>');
@@ -64,7 +64,7 @@ describe('testing API routes', function() {
     chai.request(server)
     .get('/login')
     .end(function(err, res){
-      console.log(res.text);
+      // console.log(res.text);
       res.should.have.status(200);
       res.should.be.html;
       res.text.should.have.string('<title>Login</title>');
