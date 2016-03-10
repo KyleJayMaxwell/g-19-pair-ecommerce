@@ -1,0 +1,28 @@
+{% extends 'layout.html' %}
+
+{% block title %}{% endblock %}
+
+
+{% block content %}
+
+ <form action="/charge" method="POST">
+
+  <h4>Credit Card Information:</h4>
+    <label for="cardNumber">Credit Card Number</label>
+    <input id="cardNumber"  class="form-control" name="ccnumber" placeholder="Enter your card number">
+    <label for="expiration">Expiration</label>
+    <input type="text" id="expiration" name="ccexpiration" class="form-control">
+    <label for="cvc">CVC Security Code</label>
+    <input type="number" name="cvc" id="cvc" class="form-control">
+
+    <script
+      src="https://checkout.stripe.com/checkout.js" class="stripe-button"
+      data-key="ADD_YOUR_PUBLIC_KEY_HERE"
+      data-amount="1000"
+      data-name="Stripe Example"
+      data-description="Pay Me!"
+      data-currency="usd">
+      </script>
+  </form>
+
+{% endblock %}
