@@ -14,6 +14,10 @@ router.get('/checkout', function(req, res, next) {
   res.render('checkout', { title: 'Checkout' });
 });
 
+router.get('/login', function(req, res, next) {
+  res.render('login', { title: 'Login' });
+});
+
 router.get('/review', function(req, res, next) {
   res.render('review', { title: 'Review' });
 });
