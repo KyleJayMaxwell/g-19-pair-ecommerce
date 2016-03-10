@@ -5,11 +5,9 @@ exports.up = function(knex, Promise) {
     table.integer('product_id');
     table.integer('quantity');
     table.foreign('user_id')
-    .references('id')
-    .inTable('users');
+    .references('users(id)');
     table.foreign('product_id')
-    .references('id')
-    .inTable('products');
+    .references('products(id)');
   });
 };
 

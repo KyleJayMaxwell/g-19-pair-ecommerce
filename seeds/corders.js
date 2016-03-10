@@ -14,7 +14,7 @@ exports.seed = function(knex, Promise){
           ccexperation: '04/24',
           ccv: 444
       }),
-    knex('products').insert(    
+    knex('orders').insert(    
       {
           id: 2,
           user_id: 2,
@@ -23,7 +23,7 @@ exports.seed = function(knex, Promise){
           ccexperation: '07/24',
           ccv: 499
       }),
-    knex('products').insert(    
+    knex('orders').insert(    
       {
           id: 3,
           user_id: 3,

@@ -7,8 +7,7 @@ exports.up = function(knex, Promise) {
     table.string('ccexperation');
     table.integer('ccv');
     table.foreign('user_id')
-    .references('id')
-    .inTable('users');
+    .references('users(id)');
   });  
 };
 
