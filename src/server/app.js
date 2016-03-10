@@ -7,6 +7,7 @@ var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
 var swig = require('swig');
 var knex = require('../../db/knex');
+require('dotenv').config();
 
 // *** seeds *** //
 // if(NODE_ENV = "development"){
