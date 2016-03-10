@@ -1,6 +1,7 @@
 var express = require('express');
 var router = express.Router();
 var knex = require('../../../db/knex');
+var stripe = require('stripe')(process.env.STRIPE_SECRET_KEY);
 
 router.get('/', function(req, res, next) {
   res.render('index', { title: 'Cwatch' });
@@ -30,7 +31,7 @@ router.get('/charge', function(req, res, next) {
 
 router.post('/charge', function(req, res,next) {
     var stripeToken = req.body.stripeToken;
-    var amount =  req.body.stripeAmount;
+    var amount =  2000;
 
     stripe.charges.create({
         card: stripeToken,
@@ -39,12 +40,14 @@ router.post('/charge', function(req, res,next) {
     },
     function(err, charge) {
         if (err) {
+            console.log(err);
             res.send('error');
         } else {
             res.send('success');
         }
     });
 });
+
 
 router.post('/checkout', function(req, res, next) {
   console.log(req.body);
